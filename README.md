@@ -9,3 +9,6 @@ npm run dev
 yarn dev
 ```
 
+link: https://openattendance-vjwktie49-falconsoft3d.vercel.app/
+
+
