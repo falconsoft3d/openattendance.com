@@ -13,11 +13,12 @@ link: https://openattendance.vercel.app/
 
 
 ## Tasks
+```bash
 [ ] Login
 [ ] Register
 [ ] Attendance
 [ ] API with Odoo
 [ ] Manager User
 [ ] Profile
-
+```
 
