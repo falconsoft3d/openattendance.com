@@ -1,10 +1,10 @@
 import React from 'react';
-import Sidebar from './Sidebar';
+import SideNavbar from './SideNavbar';
 
 export default function Layout({children}) {
   return (
     <div>
-         <Sidebar />
+         <SideNavbar />
          {children}
     </div>
   );
