@@ -9,6 +9,15 @@ npm run dev
 yarn dev
 ```
 
-link: https://openattendance-vjwktie49-falconsoft3d.vercel.app/
+link: https://openattendance.vercel.app/
+
+
+## Tasks
+[ ] Login
+[ ] Register
+[ ] Attendance
+[ ] API with Odoo
+[ ] Manager User
+[ ] Profile
 
 
