@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react'
 import BasicFeatures from './BasicFeatures';
 import Cta from './Cta';
 import Features from './Features';
@@ -9,6 +9,14 @@ import Testimonial from './Testimonial';
 import MyNavBar from './MyNavBar';
 
 export default function FrontLayout() {
+
+    // JS de Boostrap
+   useEffect(() => { 
+        if(typeof window !== 'undefined') {
+            require('bootstrap/dist/js/bootstrap.bundle.min');
+        }
+    });
+
   return (
     <>
 
