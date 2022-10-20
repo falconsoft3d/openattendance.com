@@ -7,7 +7,6 @@ import GetApp from './GetApp';
 import MyHeader from './MyHeader';
 import Testimonial from './Testimonial';
 import MyNavBar from './MyNavBar';
-
 export default function FrontLayout() {
 
     // JS de Boostrap
@@ -50,15 +49,6 @@ export default function FrontLayout() {
         <GetApp />
         {/* <!-- Footer--> */}
         <Footer/>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        {/* <!-- Core theme JS--> */}
-        <script src="frontend/js/scripts.js"></script>
-        {/* <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *--> */}
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 
 
