@@ -16,6 +16,10 @@ link: https://openattendance.vercel.app/
 ```bash
 [ ] Login
 [ ] Register
+[ ] Change Password
+[ ] Simple Front
+[ ] 404 Page
+--------
 [ ] Attendance
 [ ] API with Odoo
 [ ] Manager User
