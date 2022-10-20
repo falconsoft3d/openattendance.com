@@ -7,14 +7,15 @@ import GetApp from './GetApp';
 import MyHeader from './MyHeader';
 import Testimonial from './Testimonial';
 import MyNavBar from './MyNavBar';
-export default function FrontLayout() {
 
+export default function FrontLayout() {
     // JS de Boostrap
    useEffect(() => { 
         if(typeof window !== 'undefined') {
             require('bootstrap/dist/js/bootstrap.bundle.min');
         }
     });
+
 
   return (
     <>
