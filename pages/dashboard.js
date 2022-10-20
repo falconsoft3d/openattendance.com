@@ -1,9 +1,10 @@
 import React from 'react'
+import BackLayout from "../components/backend/BackLayout";
 
 export default function Dashboard() {
   return (
-    <div>
+    <BackLayout>
         <h1>Dashboard</h1>
-    </div>
+    </BackLayout>
   );
 }
