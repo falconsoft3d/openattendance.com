@@ -1,7 +1,7 @@
-import Layout from '../components/Layout'
+import FrontLayout from "../components/frontend/FrontLayout";
 
 export default function Home() {
   return (
-        <h1>Home</h1>
+        <FrontLayout />
   )
 }
