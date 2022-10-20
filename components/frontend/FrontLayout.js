@@ -18,18 +18,14 @@ export default function FrontLayout() {
 
   return (
     <>
-
         <MyNavBar />
         <MyHeader />
-
         <Testimonial />
         <Features />
         <BasicFeatures/>
         <Cta />
         <GetApp />
         <Footer/>
-
-
     </>
   );
 }
