@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function MyNavBar() {
   return (
@@ -15,12 +16,14 @@ export default function MyNavBar() {
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                     </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                    <Link href="/login">
+                    <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
                         <span class="d-flex align-items-center">
                             <i class="bi-person-fill me-2"></i>
                             <span class="small">Login</span>
                         </span>
-                    </button>
+                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>
