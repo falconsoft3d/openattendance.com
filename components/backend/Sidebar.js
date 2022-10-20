@@ -8,7 +8,7 @@ export default function Sidebar() {
                       <div class="sidebar-brand-icon rotate-n-15">
                           <i class="fas fa-laugh-wink"></i>
                       </div>
-                      <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                      <div class="sidebar-brand-text mx-3">OAtt <sup>1.0</sup></div>
                   </a>
 
                   {/* <!-- Divider --> */}
@@ -18,7 +18,7 @@ export default function Sidebar() {
                   <li class="nav-item">
                       <a class="nav-link" href="index.html">
                           <i class="fas fa-fw fa-tachometer-alt"></i>
-                          <span>Dashboard</span></a>
+                          <span>Attendance</span></a>
                   </li>
 
                   {/* <!-- Divider --> */}
