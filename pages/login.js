@@ -1,14 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import LoginLayout from '../components/login/LoginLayout';
 import Head from 'next/head';
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { toast } from "react-toastify";
+
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from '../firebase/firebaseConfig';
+import { useRouter } from 'next/router';
 
 export default function Login() {
+        const [loading, setLoading] = useState(false);
+        const { push } = useRouter();
+
+        const formik = useFormik({
+          initialValues: initialValues(),
+          validationSchema: Yup.object(validationSchema()),
+          onSubmit: async (formData) => {
+            setLoading(true);
+
+            let password = formData.password
+            let email = formData.email
+
+            if (email === "" || password === "") {
+              toast.error("Error: All fields are required");
+              return;
+             }
+
+            try {
+              await signInWithEmailAndPassword(auth, 
+                  email, 
+                  password
+                  );
+                  toast.success("You have successfully logged in");
+                  push('/');
+          } catch (error) { 
+              toast.error("Error: " + error.message);
+          }
+
+            
+          
+            
+          
+            setLoading(false);
+          },
+        });
+
         return (
           <>
           <Head>
-            <meta charset="utf-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta charSet="utf-8" />
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <meta name="description" content="" />
             <meta name="author" content="" />
@@ -25,39 +68,68 @@ export default function Login() {
           </Head>  
 
           <LoginLayout>
-          <div class="text-center">
+          <div className="text-center">
                                 <h1>OpenAttendance</h1>
-                                <h1 class="h4 text-gray-900 mb-4">Login</h1>
+                                <h1 className="h4 text-gray-900 mb-4">Login</h1>
                             </div>
-                            <form class="user">
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-user"
-                                        id="exampleInputEmail" aria-describedby="emailHelp"
-                                        placeholder="Enter Email Address..."/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-user"
-                                        id="exampleInputPassword" placeholder="Password" />
+                            <form className="user" onSubmit={formik.handleSubmit}>
+                              
+                                <div className="form-group">
+                                    <input type="email" className={`form-control form-control-user ${formik.errors.email ? "is-invalid" : "is-valid"}`}
+                                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                        id="email"
+                                        name="email"
+                                        onChange={formik.handleChange}
+                                        placeholder="Email Address"/>
                                 </div>
                                 
-                                <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                    Login
-                                </a>
+                               
+                                <div className="form-group">
+                                    <input type="password" className={`form-control form-control-user ${formik.errors.password ? "is-invalid" : "is-valid"}`}
+                                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                        id="password"
+                                        name="password"
+                                        onChange={formik.handleChange}
+                                        placeholder="Password" />
+                                </div>
+
+                               
+                                {!loading ? (
+                                    <button type="submit" className="btn btn-primary btn-user btn-block">
+                                        Login
+                                      </button>
+                                ): <p>Loading...</p>}
+                                
                                 
                             </form>
                             <hr/>
-                            <div class="text-center">
+                            <div className="text-center">
                               <Link href="/forgotpassword">
-                                <a class="small">Forgot Password?</a>
+                                <a className="small">Forgot Password?</a>
                               </Link>
                             </div>
-
-                            <div class="text-center">
-                                <Link href="/register">
-                                    <a class="small">Create an Account!</a>
-                                </Link>
+                            <div className="text-center">
+                              <Link href="/login">
+                                <a className="small" >Login</a>
+                              </Link>  
                             </div>
           </LoginLayout>
           </>
         )
+      }
+
+
+
+function initialValues() {
+        return {
+          email: "",
+          password: "",
+        };
+      }
+      
+function validationSchema() {
+        return {
+          email: Yup.string().email(true).required(true),
+          password: Yup.string().required(true),
+        };
       }
