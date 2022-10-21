@@ -1,14 +1,13 @@
 import React from 'react'
-import Attendance from '../components/backend/Attendance';
 import BackLayout from "../components/backend/BackLayout";
 import { useAuth } from '../context/AuthUserContext';
 
-export default function Dashboard() {
+export default function Profile() {
   console.log(useAuth());
 
   return (
     <BackLayout>
-        <Attendance />
+        <h1>Profile</h1>
     </BackLayout>
   );
 }

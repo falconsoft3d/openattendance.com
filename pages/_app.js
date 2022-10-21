@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import "../css/index.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthUserProvider } from '../context/AuthUserContext';

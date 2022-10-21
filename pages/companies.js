@@ -1,5 +1,4 @@
 import React from 'react'
-import Attendance from '../components/backend/Attendance';
 import BackLayout from "../components/backend/BackLayout";
 import { useAuth } from '../context/AuthUserContext';
 
@@ -8,7 +7,7 @@ export default function Dashboard() {
 
   return (
     <BackLayout>
-        <Attendance />
+        <h1>Companies</h1>
     </BackLayout>
   );
 }
