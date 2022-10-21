@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -12,9 +12,7 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APPID,
 };
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-export default db;
+const auth = getAuth(app);
+export { auth };
