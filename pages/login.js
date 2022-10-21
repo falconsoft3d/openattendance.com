@@ -34,7 +34,7 @@ export default function Login() {
                   password
                   );
                   toast.success("You have successfully logged in");
-                  push('/');
+                  push('/dashboard');
           } catch (error) { 
               toast.error("Error: " + error.message);
           }

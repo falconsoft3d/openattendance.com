@@ -1,8 +1,7 @@
 OpenAttendance.com
 
 # Who I am
-My Name is Marlon Falcón Hernández. I am a Civil Engineer and Master in Architecture. I have worked for years in ERP development.
-![Alt text](https://github.com/falconsoft3d/pyerp/blob/master/marketing/marlon-falcon-youtube.png?raw=true "Marlon")
+My Name is Marlon Falcón Hernández. I am a Full Stack Web Developer. I have worked for years in ERP development.
 
 
 # My contact data
@@ -13,5 +12,9 @@ Marlon Falcón Hernández | España | Madrid
 » Github: https://github.com/falconsoft3d
 » linkedin: https://linkedin.com/in/marlon-falcón-3a2aa9a4
 ```
-```
 
+
+# Links
+```
+https://blog.logrocket.com/implementing-authentication-in-next-js-with-firebase/
+```
