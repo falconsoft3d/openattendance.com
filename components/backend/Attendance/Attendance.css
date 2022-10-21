@@ -16,6 +16,16 @@
     min-height: 650px;
 }
 
+.attendance-main-int-body{
+    background-color: #5E6661;
+    min-height: 150px;
+    padding-top: 20px;
+}
+
+.attendance-main-int-header {
+    padding-top: 40px;
+}
+
 .attendance-main-int-footer {
     padding: 20px;
 }

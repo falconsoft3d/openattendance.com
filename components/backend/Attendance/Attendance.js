@@ -6,11 +6,15 @@ export default function Attendance() {
          <div className='row m-2'>
             <div className='col m-2'>
                   <div className='attendance-main-int'>
-                        <div className='attendance-main-int-header'>
-                              1
+                        <div className='attendance-main-int-header text-center'>
+                              <h1>30 JULY 2022</h1>
+                              <p>create your attendance</p>
+                              <h1>Total 03:23</h1>
+                              <h5>Workday</h5>
                         </div>
-                        <div className='attendance-main-int-body'>
-                              1
+                        <div className='attendance-main-int-body text-center text-light'>
+                              <h1>8:30 to 10 : 12</h1>
+                              <h1>11:00 to -- : --</h1>
                         </div>
                         <div className='attendance-main-int-footer'>
                             <button type="submit" className="btn btn-success btn-lg btn-block">
@@ -29,7 +33,7 @@ export default function Attendance() {
                   </div>  
             </div>
             <div className='col m-2'>
-                  1
+                  
             </div> 
          </div>
     </div>
