@@ -97,9 +97,14 @@ export default function Login() {
                                 {!loading ? (
                                     <button type="submit" className="btn btn-primary btn-user btn-block">
                                         Login
-                                      </button>
+                                    </button>
                                 ): <p>Loading...</p>}
                                 
+                                <Link href={"/"}>
+                                <a type="submit" className="btn btn-secondary btn-user btn-block">
+                                        Home
+                                 </a>
+                                 </Link>
                                 
                             </form>
                             <hr/>
@@ -108,9 +113,10 @@ export default function Login() {
                                 <a className="small">Forgot Password?</a>
                               </Link>
                             </div>
+                            
                             <div className="text-center">
-                              <Link href="/login">
-                                <a className="small" >Login</a>
+                              <Link href="/register">
+                                <a className="small" >Register</a>
                               </Link>  
                             </div>
           </LoginLayout>

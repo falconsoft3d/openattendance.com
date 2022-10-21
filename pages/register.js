@@ -126,6 +126,11 @@ export default function Register() {
                                       </button>
                                 ): <p>Loading...</p>}
                                 
+                                <Link href={"/"}>
+                                <a type="submit" className="btn btn-secondary btn-user btn-block">
+                                        Home
+                                 </a>
+                                 </Link>
                                 
                             </form>
                             <hr/>
