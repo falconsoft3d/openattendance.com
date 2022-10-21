@@ -11,12 +11,12 @@ export default function Employees() {
 
 {/* <!-- Page Heading --> */}
 <h1 className="h3 mb-2 text-gray-800">Employees</h1>
-<p className="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTabl taTables documentation</p>
+<p className="mb-4">Table of employees of your company</p>
 
 {/* <!-- DataTales Example --> */}
             <div className="card shadow mb-4">
             <div className="card-header py-3">
-                <h6 className="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                <button className="btn btn-success" data-toggle="modal" data-target="#addEmployeeModal">Add Employee</button>
             </div>
             <div className="card-body">
                 <div className="table-responsive">
@@ -51,7 +51,15 @@ export default function Employees() {
                         <td>$86,000</td>
                     
                     </tr></tbody>
-                </table></div></div><div className="row"><div className="col-sm-12 col-md-5"><div className="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div><div className="col-sm-12 col-md-7"><div className="dataTables_paginate paging_simple_numbers" id="dataTable_paginate"><ul className="pagination"><li className="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" className="page-link">Previous</a></li><li className="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" className="page-link">1</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" className="page-link">2</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" className="page-link">3</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" className="page-link">4</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" className="page-link">5</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" className="page-link">6</a></li><li className="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" className="page-link">Next</a></li></ul></div></div></div></div>
+                </table></div></div><div className="row">
+                    <div className="col-sm-12 col-md-5">
+                        <div className="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                        </div>
+                            <div className="col-sm-12 col-md-7">
+                                <div className="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                    <ul className="pagination"><li className="paginate_button page-item previous disabled" id="dataTable_previous">
+                                        <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" className="page-link">Previous</a>
+                                        </li><li className="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" className="page-link">1</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" className="page-link">2</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" className="page-link">3</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" className="page-link">4</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" className="page-link">5</a></li><li className="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" className="page-link">6</a></li><li className="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" className="page-link">Next</a></li></ul></div></div></div></div>
                 </div>
             </div>
             </div>

@@ -19,13 +19,15 @@ export default function Sidebar() {
 
                   {/* <!-- Nav Item - Dashboard --> */}
 
-                  <Link href={"/dashboard"}>
+                  
                   <li class="nav-item">
-                      <a class="nav-link" href="index.html">
+                    <Link href={"/dashboard"}>
+                      <a class="nav-link">
                           <i class="fas fa-fw fa-tachometer-alt"></i>
                           <span>Attendance</span></a>
+                    </Link>
                   </li>
-                  </Link>
+                  
 
                   {/* <!-- Divider --> */}
                   <hr class="sidebar-divider"/>
@@ -34,37 +36,45 @@ export default function Sidebar() {
                   
 
 
-                <Link href={"/employees"}>
+                
                   <li class="nav-item">
+                    <Link href={"/employees"}>
                       <a class="nav-link">
                           <i class="fas fa-fw fa-user"></i>
                           <span>Employees</span></a>
+                     </Link>       
                   </li>
-                </Link>
+                
                   
-                <Link href={"/companies"}>
+                
                   <li class="nav-item">
-                      <a class="nav-link" href="tables.html">
+                    <Link href={"/companies"}>
+                      <a class="nav-link">
                           <i class="fas fa-fw fa-table"></i>
                           <span>Companies</span></a>
+                    </Link> 
                   </li>
-                </Link>    
+                   
                 
-                <Link href={"/profile"}>
+                
                   <li class="nav-item">
+                    <Link href={"/profile"}>
                       <a class="nav-link">
                           <i class="fas fa-fw fa-user"></i>
                           <span>Profile</span></a>
+                    </Link>         
                   </li>
-                </Link>  
+                
 
-                <Link href={"/config"}>
+                
                   <li class="nav-item">
+                    <Link href={"/config"}>
                       <a class="nav-link">
                           <i class="fas fa-fw fa-chart-area"></i>
                           <span>Config</span></a>
+                    </Link>         
                   </li>
-                </Link>  
+                
 
                   {/* <!-- Divider --> */}
                   <hr class="sidebar-divider d-none d-md-block"/>
