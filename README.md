@@ -1,5 +1,11 @@
 # OpenAttendance
-## ¿What is?
+# Which is what i hope it will do
+It is an open source solution to implement attendance control with the web and with the mobile phone
+
+# branches
+- Main: It is the front web with the api using Next JS
+
+- Mobile: Here we will have the application made with reactjs
 
 
 # Who I am
