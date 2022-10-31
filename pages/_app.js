@@ -1,27 +1,7 @@
-import "../css/index.css";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { AuthUserProvider } from '../context/AuthUserContext';
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <>
-    <AuthUserProvider>
-      <Component {...pageProps} />
-    </AuthUserProvider>
-      <ToastContainer
-              position="top-right"
-              autoClose={5000}
-              hideProgressBar
-              newestOnTop
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss={false}
-              draggable
-              pauseOnHover
-            />
-    </>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp

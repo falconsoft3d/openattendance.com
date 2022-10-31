@@ -1,4 +1,6 @@
-OpenAttendance.com
+# OpenAttendance
+## ¿What is?
+
 
 # Who I am
 My Name is Marlon Falcón Hernández. I am a Full Stack Web Developer. I have worked for years in ERP development.
@@ -11,10 +13,4 @@ Marlon Falcón Hernández | España | Madrid
 » Email: mfalconsoft@gmail.com , falconsof.3d@gmail.com
 » Github: https://github.com/falconsoft3d
 » linkedin: https://linkedin.com/in/marlon-falcón-3a2aa9a4
-```
-
-
-# Links
-```
-https://blog.logrocket.com/implementing-authentication-in-next-js-with-firebase/
 ```
