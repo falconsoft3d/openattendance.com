@@ -2,15 +2,16 @@
 # Which is what i hope it will do
 It is an open source solution to implement attendance control with the web and with the mobile phone
 
-# branches
+# Branches
 - Main: It is the front web with the api using Next JS
-
 - Mobile: Here we will have the application made with reactjs
 
+# Links
+- WEB: https://vercel.com/falconsoft3d/openattendance
+- Mobile
 
 # Who I am
 My Name is Marlon Falcón Hernández. I am a Full Stack Web Developer. I have worked for years in ERP development.
-
 
 # My contact data
 ```
