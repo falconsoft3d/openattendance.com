@@ -4,7 +4,6 @@ It is an open source solution to implement attendance control with the web and w
 
 # Branches
 - Main: It is the front web with the api using Next JS
-- Mobile: Here we will have the application made with reactjs
 
 # Links
 - WEB: https://vercel.com/falconsoft3d/openattendance
