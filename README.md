@@ -1,4 +1,11 @@
 # OpenAttendance
+
+# Run Next
+```
+npm run dev
+```
+
+
 # Which is what i hope it will do
 It is an open source solution to implement attendance control with the web and with the mobile phone
 
